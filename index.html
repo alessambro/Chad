@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Chad's Web</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: white;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        .navbar {
+            background-color: #fff;
+            height: 50px;
+            border-radius: 16px;
+            padding: 0.5rem;
+        }
+
+        .nav-link {
+            color: #666777;
+            font-weight: 800;
+            position: relative;
+            margin: 10px;
+        }
+
+        .nav-link:hover, .nav-link.active {
+            color: #000;
+        }
+
+        .nav-link::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 2px;
+            background-color: #009970;
+            visibility: hidden;
+            transition: 0.3s ease-in-out;
+        }
+
+        .nav-link:hover::before, .nav-link.active::before {
+            width: 100%;
+            visibility: visible;
+        }
+
+        .hero-sect {
+            border-bottom-left-radius: 150%;
+            border-bottom-right-radius: 150%;
+            background: url(backgroun_4.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 100%;
+            height: 50vh;
+        }
+
+        .hero-sect-2 {
+            border-top-left-radius: 0;
+            border-bottom-right-radius: 20%;
+            border-top-right-radius: 0;
+            border-bottom-left-radius: 20%;
+            background: url(background_3.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 100%;
+            height: 100vh;
+        }
+
+        .hero-sect-3 {
+            border-top-left-radius: 10%;
+            border-bottom-right-radius: 10%;
+            border-top-right-radius: 130%;
+            border-bottom-left-radius: 130%;
+            background: url(background_5.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 100%;
+            height: 100vh;
+        }
+
+        .hei-5 {
+            height: 20px;
+        }
+
+        .h1-bog {
+            font-size: 100px;
+            font-weight: bolder;
+        }
+
+        .h1-out {
+            -webkit-text-stroke: 2px rgb(0, 0, 0);
+        }
+
+        .m-u {
+            margin-top: 150px;
+            margin-left: 100px;
+        }
+        
+        .mar-le {
+            margin-left: 180px;
+        }
+
+        .p-b {
+            font-size: 30px;
+        }
+
+        .small-out {
+            -webkit-text-stroke: 1px rgb(0, 0, 0);
+        }
+
+        .bg-c {
+            background-color: bisque;
+        }
+    </style>
+</head>
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand">
+        <div class="container-fluid rounded-circle ">
+            <a class="navbar-brand" href="#">
+                <img src="logo.jpg" class="rounded-circle" width="40px"/>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link" href="#second-page">Tips</a>
+                    <a class="nav-link" href="#student"><button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#student">Student</button></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!--Navbar End-->
+
+    <div class="container-fluid hero-sect">
+    </div>
+
+    <div class="container-fluid">
+        <div class="row border border-2 bg-light">
+            <h1 class="text-secondary h1-bog h1-out d-flex justify-content-center">
+                Balanced Diet
+            </h1>
+        </div>
+        <div class="container">
+            <p class="text-black p-b small-out">
+                A balanced diet is essential for maintaining good health and well-being. It provides the necessary nutrients, vitamins, and minerals that our bodies need to function properly. Understanding what constitutes a balanced diet and how to incorporate it into your lifestyle is key to achieving optimal health.
+            </p>
+        </div>
+    </div>
+
+    <div class="container-fluid hero-sect-2">
+        <div class="row border border-2 bg-light">
+            <div class="d-flex justify-content-center mt-3">
+                <h3 class="text-black fs-1">
+                    What is a Balanced Diet
+                </h3>
+            </div>
+            <div class="d-flex justify-content-center mt-2">
+                <p class="fs-5">
+                    A balanced diet includes a variety of foods from all food groups in appropriate proportions. These food groups typically include:
+                </p>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col d-flex justify-content-center">
+                <div class="card bg-light" style="width: 20rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            1. Fruits and Vegetables
+                        </h5>
+                        <p class="card-text">
+                            Rich in vitamins, minerals, and antioxidants, fruits and vegetables are essential for maintaining overall health. Aim to include a variety of colorful fruits and vegetables in your diet to ensure you get a wide range of nutrients.
+                        </p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col d-flex justify-content-center">
+                <div class="card bg-light" style="width: 20rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            2. Protein
+                        </h5>
+                        <p class="card-text">
+                            Protein is crucial for building and repairing tissues, as well as for proper immune function. Good sources of protein include lean meats, poultry, fish, eggs, dairy products, legumes, nuts, and seeds.
+                        </p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col d-flex justify-content-center">
+                <div class="card bg-light" style="width: 20rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            3. Grains
+                        </h5>
+                        <p class="card-text">
+                            Whole grains provide carbohydrates, fiber, vitamins, and minerals. Opt for whole grain options such as brown rice, quinoa, whole wheat bread, and oats, which are more nutritious than refined grains.
+                        </p>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col d-flex justify-content-center">
+                <div class="card bg-light" style="width: 20rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            4. Dairy or Dairy Alternatives
+                        </h5>
+                        <p class="card-text">
+                            Dairy products are excellent sources of calcium, which is essential for bone health. If you're lactose intolerant or prefer non-dairy options, choose fortified alternatives like soy milk, almond milk, or fortified orange juice.
+                        </p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col d-flex justify-content-center">
+                <div class="card bg-light" style="width: 20rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            5. Healthy Fats
+                        </h5>
+                        <p class="card-text">
+                            Healthy fats, such as those found in avocados, nuts, seeds, and olive oil, are important for brain function, hormone production, and nutrient absorption. Include these fats in moderation as part of a balanced diet.
+                        </p>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid hero-sect-3">
+        <div class="row border border-2 bg-light hei-5">
+            
+        </div>  
+        <div class="row mt-4">
+            <div class="col d-flex justify-content-center">
+                <div class="card bg-c" style="width: 35rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            Key Components of a Balanced Diet:
+                        </h5>
+                        <h6 class="card-subtitle mb-2 text-body-secondary">
+                            To ensure you're following a balanced diet, consider the following principles:
+                        </h6>
+                        <p class="card-text">
+                            <ol class="list-group list-group-numbered list-group-flush">
+                                <li class="list-group-item">
+                                    Portion Control: Pay attention to portion sizes to avoid overeating, which can lead to weight gain and other health issues. Use tools like measuring cups and food scales to help you gauge appropriate serving sizes.
+                                </li>
+                                <li class="list-group-item">
+                                    Variety: Aim to eat a wide variety of foods from all food groups to ensure you're getting a diverse array of nutrients. Eating different foods also makes meals more enjoyable and prevents boredom.
+                                </li>
+                                <li class="list-group-item">
+                                    Moderation: Enjoy all foods in moderation, including treats and indulgences. There's no need to completely eliminate your favorite foods, but be mindful of portion sizes and frequency of consumption.
+                                </li>
+                                <li class="list-group-item">
+                                    Hydration: Stay hydrated by drinking plenty of water throughout the day. Water is essential for digestion, nutrient absorption, and overall cellular function.
+                                </li>
+                            </ol>
+                        </p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col d-flex justify-content-center">
+                <div class="card bg-c" style="width: 35rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            Benefits of a Balanced Diet:
+                        </h5>
+                        <h6 class="card-subtitle mb-2 text-body-secondary">
+                            Following a balanced diet offers numerous health benefits, including:
+                        </h6>
+                        <p class="card-text">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    * Maintaining a healthy weight
+                                </li>
+                                <li class="list-group-item">
+                                    * Improving energy levels and overall mood
+                                </li>
+                                <li class="list-group-item">
+                                    * Supporting proper growth and development
+                                </li>
+                                <li class="list-group-item">
+                                    * Reducing the risk of chronic diseases such as heart disease, diabetes, and certain cancers
+                                </li>
+                                <li class="list-group-item">
+                                    * Enhancing immune function and reducing the risk of infections
+                                </li>
+                              </ul>
+                        </p>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Modal-->
+    <div class="modal" id="student">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Personal Info</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col">
+                                <img src="personal.jpg" class="rounded-circle" style="width: 30rem; height: 27rem;"/>
+                            </div>
+                            <div class="col">
+                                <h2>Name: Chad Pallon</h2>
+                                <hr>
+                                <h2>Age: 18</h2>
+                                <hr>
+                                <h2>Gender: Male</h2>
+                                <hr>
+                                <h2>Course: Bachelor of Science in Nursing</h2>
+                                <hr>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+      </div>
+    <!--End Modal-->
+
+    <!--JavaScript-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
